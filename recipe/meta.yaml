@@ -19,8 +19,8 @@ requirements:
     - pip
     - python
   run:
-    - pyobjc-core >=8.5
-    - pyobjc-framework-cocoa >=8.5
+    - pyobjc-core >=8.5.1
+    - pyobjc-framework-cocoa >=8.5.1
     - python
 
 test:
