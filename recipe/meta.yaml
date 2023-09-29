@@ -1,5 +1,5 @@
 {% set name = "pyobjc-framework-corebluetooth" %}
-{% set version = "9.1" %}
+{% set version = "10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyobjc-framework-CoreBluetooth-{{ version }}.tar.gz
-  sha256: 4c886119cc2e345750bdefdc48184764ea9a1eebcd43cdf6c630d1bdfbfc34d8
+  sha256: dddc9020cd2ca008c7037c61026641fff5d91a608b9e3bda51d4ba6afbb04e3c
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
