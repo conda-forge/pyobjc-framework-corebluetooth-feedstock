@@ -15,12 +15,14 @@ build:
   skip: true  # [linux or win]
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - pip
     - python
   run:
-    - pyobjc-core >=8.5
-    - pyobjc-framework-cocoa >=8.5
+    - pyobjc-core >=9.1
+    - pyobjc-framework-cocoa >=9.1
     - python
 
 test:
@@ -41,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - jan-janssen
+    - xhochy
