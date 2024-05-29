@@ -1,13 +1,13 @@
 {% set name = "pyobjc-framework-corebluetooth" %}
-{% set version = "10.2" %}
+{% set version = "10.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyobjc-framework-CoreBluetooth-{{ version }}.tar.gz
-  sha256: fb69d2c61082935b2b12827c1ba4bb22146eb3d251695fa1d58bbd5835260729
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7ca00c8f96517b4421162846b5f66369360e4523ca917c6e0507d051381fb466
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -17,12 +17,13 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
   run:
-    - pyobjc-core >=10.1
-    - pyobjc-framework-cocoa >=10.1
+    - pyobjc-core >=10.3
+    - pyobjc-framework-cocoa >=10.3
     - python
 
 test:
