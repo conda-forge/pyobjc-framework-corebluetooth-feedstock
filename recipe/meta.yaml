@@ -11,15 +11,17 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   skip: true  # [linux or win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
+    - setuptools
   run:
     - pyobjc-core >=10.1
     - pyobjc-framework-cocoa >=10.1
