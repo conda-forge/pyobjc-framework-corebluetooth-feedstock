@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
   run:
     - pyobjc-core >=10.1
     - pyobjc-framework-cocoa >=10.1
