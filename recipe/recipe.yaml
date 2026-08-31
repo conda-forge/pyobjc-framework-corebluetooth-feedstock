@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "12.2.1"
+  version: "12.2.2"
 
 package:
   name: pyobjc-framework-corebluetooth
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyobjc-framework-corebluetooth/pyobjc_framework_corebluetooth-${{ version }}.tar.gz
-  sha256: 7dbb285295097205bebbcb11f55161e5faa02111108fb7b17536176e31971eb0
+  sha256: 75aa13f5355be549252d3192864bb3b82eb74c1f667d0527c1388117efffd688
 
 build:
   number: 0
@@ -25,8 +25,8 @@ requirements:
     - python
     - setuptools
   run:
-    - pyobjc-core >=12.2
-    - pyobjc-framework-cocoa >=12.2
+    - pyobjc-core >=12.2.2
+    - pyobjc-framework-cocoa >=12.2.2
     - python
 
 tests:
