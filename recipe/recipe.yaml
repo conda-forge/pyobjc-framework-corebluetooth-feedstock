@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  version: "12.2"
+  version: "12.2.1"
 
 package:
   name: pyobjc-framework-corebluetooth
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/52/df/bee7ba216f9fb513710aac1701b78c97b087b37fca8ec1806f8572e0bbb3/pyobjc_framework_corebluetooth-${{ version }}.tar.gz
-  sha256: 8b4e5ca99953c360c391a695b0782a5328fcecafd56fdf790ad709e932feb306
+  url: https://pypi.org/packages/source/p/pyobjc-framework-corebluetooth/pyobjc_framework_corebluetooth-${{ version }}.tar.gz
+  sha256: 7dbb285295097205bebbcb11f55161e5faa02111108fb7b17536176e31971eb0
 
 build:
   number: 0
